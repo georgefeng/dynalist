@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dynalist',
-    version='0.1.1',
+    version='0.1.2',
     description=(
         'Unofficial Dynalist API Written in Python'
     ),
