@@ -1,4 +1,6 @@
 # Dynalist
+[![LICENSE](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
+
 
 Unofficial Dynalist API Written in Python.
 
