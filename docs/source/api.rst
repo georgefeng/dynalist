@@ -11,7 +11,7 @@ _______________________________________________
 Class API
 *********
 
-.. autoclass:: dynalist.dynalist.Dynalist
+.. autoclass:: dynalist.Dynalist
     :members:
 
 _______________________________________________
