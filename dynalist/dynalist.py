@@ -55,6 +55,13 @@ class Dynalist():
     def get_node(self, node_id='root'):
         return self.doc_dict.get(node_id, {})
 
+    def get_node_link(self, node_id):
+        node = self.get_node(node_id)
+        _url = 'https://dynalist.io/d/'+self.file_id+'#z=' + node['id']
+
+        return '[{}]({})'.format(node['content'],_url)
+
+
     def get_children(self, node_id='root'):
         node = self.doc_dict.get(node_id)
         _children = node.get('children',[])
