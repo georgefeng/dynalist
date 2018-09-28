@@ -23,7 +23,7 @@ setup(
     author_email=about['__authoremail__'],
     url=about['__url__'],
     version=about['__version__'],
-    packages=find_packages('./dynalist'),
+    packages=find_packages(),
     install_requires=['requests>=2.18.3'],
     keywords=['dynalist', 'api'],
     license=about['__license__'],
