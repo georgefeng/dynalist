@@ -12,10 +12,37 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+################################
+# CUSTOM
+################################
 
+import sys
+import os
+source_dir = os.path.dirname(__file__)
+print('SOURCE_DIR: {}'.format(source_dir))
+doc_dir = os.path.dirname(source_dir)
+print('DOC_DIR: {}'.format(doc_dir))
+root_dir = os.path.dirname(doc_dir)
+print('ROOT_DIR: {}'.format(root_dir))
+sys.path.append(root_dir)
+
+napoleon_google_docstring = True
+napoleon_include_init_with_doc = True
+
+import dynalist
+from dynalist.__version__ import __version__
+__version__ = __version__.split('-', 0)
+__release__ = __version__
+# The full version, including alpha/beta/rc tags.
+# release = version
+
+# import sphinx_rtd_theme
+# html_theme = "sphinx_rtd_theme"
+# html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+################################
+# CUSTOM
+################################
 
 # -- Project information -----------------------------------------------------
 
@@ -23,10 +50,10 @@ project = 'dynalist'
 copyright = '2018, feng'
 author = 'feng'
 
-# The short X.Y version
-version = ''
-# The full version, including alpha/beta/rc tags
-release = '0.2.3'
+# # The short X.Y version
+# version = ''
+# # The full version, including alpha/beta/rc tags
+# release = '0.2.4'
 
 
 # -- General configuration ---------------------------------------------------

@@ -24,7 +24,7 @@ setup(
     url=about['__url__'],
     version=about['__version__'],
     packages=find_packages(),
-    install_requires=['requests>=2.18.3'],
+    install_requires=['requests>=2.18.3','six==1.10.0'],
     keywords=['dynalist', 'api'],
     license=about['__license__'],
     classifiers=[
