@@ -67,3 +67,5 @@ class Dynalist():
         _children = node.get('children',[])
         return [self.doc_dict[_child] for _child in _children]
 
+    def search(self, keyword):
+        return [n for n in self.doc if keyword in n['content'] or n['note']]
