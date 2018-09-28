@@ -1,7 +1,7 @@
 # Dynalist
 [![LICENSE](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
-[![pypi](https://img.shields.io/pypi/v/dynalist.svg?&style=flat-square&colorB=brightgreen)](https://img.shields.io/pypi/v/dynalist.svg?&style=flat-square&colorB=brightgreen)
-[![docs](https://readthedocs.org/projects/dynalist/badge/?version=latest&style=flat-square)](https://readthedocs.org/projects/dynalist/badge/?version=latest&style=flat-square)
+[![pypi](https://img.shields.io/pypi/v/dynalist.svg?&style=flat-square&colorB=brightgreen)](https://pypi.org/project/dynalist/)
+[![docs](https://readthedocs.org/projects/dynalist/badge/?version=latest&style=flat-square)](https://dynalist.readthedocs.io/en/latest/)
 
 Unofficial Dynalist API Written in Python.
 
