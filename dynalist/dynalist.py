@@ -1,5 +1,33 @@
 """
-"""
+
+Dynalist Class Instance
+***********************
+>>> dynalist = Dynalist(file_id='FF7nfSyfsJjx9NvOfqts_rfO')
+>>> dynalist.get_node('root') # doctest: +ELLIPSIS
+{'id': 'root', 'content':..., 'note': '', ...}
+
+Examples
+********
+For a full list of available methods see the :any:`Dynalist` class below.
+
+Doc:
+>>> dynalist.doc
+
+Children nodes
+>>> dynalist.get_children(node_id='root')
+
+Search:
+>>> dynalist.search('123')
+[{'id': 'kS7XOylNJ2eJXwhxRmpW1VB5', 'content': '123123', 'note': '', 'checked': False}]
+
+You can see the Dynalist Class in action in this
+`Source code <https://dynalist.readthedocs.io/en/latest/api.html#source-code>`_
+------------------------------------------------------------------------
+
+""" 
+
+
+
 import json
 import requests
 import os
@@ -45,6 +73,15 @@ class Dynalist():
         self.file = _info
 
     def to_json(self, file_name=None):
+        """
+
+        Args:
+            file_name: 'aaa.json'
+
+        Returns:
+            output the json file.
+
+        """
         if not file_name:
             file_name = self.file['title']
 
@@ -70,4 +107,4 @@ class Dynalist():
         return [self.doc_dict[_child] for _child in _children]
 
     def search(self, keyword):
-        return [n for n in self.doc if keyword in n['content'] or n['note']]
+        return [n for n in self.doc if keyword in n['content'] or keyword in n['note']]

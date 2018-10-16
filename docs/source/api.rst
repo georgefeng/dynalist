@@ -5,14 +5,15 @@ Overview
 ********
 
 .. automodule:: dynalist.dynalist
+   :members:
 
 _______________________________________________
 
 Class API
 *********
 
-.. autoclass:: dynalist.Dynalist
-    :members:
+.. autoclass:: dynalist.dynalist.Dynalist
+   :members:
 
 _______________________________________________
 

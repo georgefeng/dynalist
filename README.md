@@ -12,10 +12,15 @@ pip install dynalist
 ```
 
 ## Documentation
+Full documentation here:
+
+https://dynalist.readthedocs.io/
 
 ### Usage Example
 
 Below are some of the methods available in the wrapper.
+
+For the full list and documentation visit the [docs](https://dynalist.readthedocs.io/)
 
 ```
 dynalist = Dynalist('your_file_id')

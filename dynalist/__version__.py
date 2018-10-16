@@ -1,4 +1,4 @@
-__version__ = '0.2.4'
+__version__ = '0.2.6'
 __name__ = 'dynalist'
 __description__ = 'Unofficial Dynalist API Written in Python'
 __url__ = 'https://github.com/georgefeng/dynalist'
